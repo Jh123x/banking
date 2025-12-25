@@ -1,11 +1,15 @@
 package country
 
 import (
+	_ "embed"
+
 	"github.com/jbub/banking/bban"
 )
 
 var (
-	countries = map[string]Country{
+	//go:embed countries.json
+	countries              map[string]Country
+	countriesWithStructure = map[string]Country{
 		"AL": {
 			Name:       "Albania",
 			Alpha2Code: "AL",
