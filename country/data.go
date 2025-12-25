@@ -698,6 +698,16 @@ var (
 				bban.NewAccountNumber(18, bban.AlphaNum),
 			),
 		},
+		"ST": {
+			Name:       "Sao Tome and Principe",
+			Alpha2Code: "ST",
+			Alpha3Code: "STP",
+			Structure: bban.NewStructure(
+				bban.NewBranchCode(4, bban.Num),
+				bban.NewBranchCode(4, bban.Num),
+				bban.NewAccountNumber(13, bban.Num),
+			),
+		},
 		"RS": {
 			Name:       "Serbia",
 			Alpha2Code: "RS",
