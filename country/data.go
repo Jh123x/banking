@@ -97,6 +97,16 @@ var (
 				bban.NewOwnerAccountType(1, bban.AlphaNum),
 			),
 		},
+		"BI": {
+			Name:       "Burundi",
+			Alpha2Code: "BI",
+			Alpha3Code: "BDI",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(5, bban.Num),
+				bban.NewBranchCode(5, bban.Num),
+				bban.NewAccountNumber(13, bban.Num),
+			),
+		},
 		"VG": {
 			Name:       "British Virgin Islands",
 			Alpha2Code: "VG",
@@ -164,6 +174,16 @@ var (
 				bban.NewAccountNumber(10, bban.Num),
 			),
 		},
+		"DJ": {
+			Name:       "Djibouti",
+			Alpha2Code: "DJ",
+			Alpha3Code: "DJI",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(5, bban.Num),
+				bban.NewBranchCode(5, bban.Num),
+				bban.NewAccountNumber(13, bban.Num),
+			),
+		},
 		"DO": {
 			Name:       "Dominican Republic",
 			Alpha2Code: "DO",
@@ -182,6 +202,15 @@ var (
 				bban.NewBranchCode(2, bban.Num),
 				bban.NewAccountNumber(11, bban.Num),
 				bban.NewNationalCheckDigit(1, bban.Num),
+			),
+		},
+		"SV": {
+			Name:       "El Salvador",
+			Alpha2Code: "SV",
+			Alpha3Code: "SLV",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(4, bban.AlphaUpper),
+				bban.NewAccountNumber(20, bban.Num),
 			),
 		},
 		"EG": {
@@ -223,6 +252,15 @@ var (
 				bban.NewBranchCode(5, bban.Num),
 				bban.NewAccountNumber(11, bban.AlphaNum),
 				bban.NewNationalCheckDigit(2, bban.Num),
+			),
+		},
+		"FK": {
+			Name:       "Falkland Islands",
+			Alpha2Code: "FK",
+			Alpha3Code: "FLK",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(2, bban.AlphaUpper),
+				bban.NewAccountNumber(12, bban.Num),
 			),
 		},
 		"GE": {
@@ -289,6 +327,15 @@ var (
 				bban.NewBranchCode(4, bban.Num),
 				bban.NewAccountNumber(16, bban.Num),
 				bban.NewNationalCheckDigit(1, bban.Num),
+			),
+		},
+		"HN": {
+			Name:       "Honduras",
+			Alpha2Code: "HN",
+			Alpha3Code: "HND",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(4, bban.AlphaUpper),
+				bban.NewAccountNumber(20, bban.Num),
 			),
 		},
 		"IS": {
@@ -434,6 +481,16 @@ var (
 				bban.NewAccountNumber(13, bban.AlphaNum),
 			),
 		},
+		"LY": {
+			Name:       "Libya",
+			Alpha2Code: "LY",
+			Alpha3Code: "LBY",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(3, bban.Num),
+				bban.NewBranchCode(3, bban.Num),
+				bban.NewAccountNumber(15, bban.Num),
+			),
+		},
 		"MK": {
 			Name:       "Macedonia",
 			Alpha2Code: "MK",
@@ -507,6 +564,24 @@ var (
 				bban.NewNationalCheckDigit(2, bban.Num),
 			),
 		},
+		"MN": {
+			Name:       "Mongolia",
+			Alpha2Code: "MN",
+			Alpha3Code: "MNG",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(4, bban.Num),
+				bban.NewAccountNumber(12, bban.Num),
+			),
+		},
+		"NI": {
+			Name:       "Nicaragua",
+			Alpha2Code: "NI",
+			Alpha3Code: "NIC",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(4, bban.AlphaUpper),
+				bban.NewAccountNumber(20, bban.Num),
+			),
+		},
 		"NL": {
 			Name:       "Netherlands",
 			Alpha2Code: "NL",
@@ -524,6 +599,15 @@ var (
 				bban.NewBankCode(4, bban.Num),
 				bban.NewAccountNumber(6, bban.Num),
 				bban.NewNationalCheckDigit(1, bban.Num),
+			),
+		},
+		"OM": {
+			Name:       "Oman",
+			Alpha2Code: "OM",
+			Alpha3Code: "OMN",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(3, bban.Num),
+				bban.NewAccountNumber(16, bban.AlphaNum),
 			),
 		},
 		"PK": {
@@ -584,6 +668,16 @@ var (
 				bban.NewAccountNumber(16, bban.AlphaNum),
 			),
 		},
+		"RU": {
+			Name:       "Russia",
+			Alpha2Code: "RU",
+			Alpha3Code: "RUS",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(9, bban.Num),
+				bban.NewBranchCode(5, bban.Num),
+				bban.NewAccountNumber(15, bban.AlphaNum),
+			),
+		},
 		"SM": {
 			Name:       "San Marino",
 			Alpha2Code: "SM",
@@ -625,6 +719,15 @@ var (
 				bban.NewCurrency(3, bban.AlphaUpper),
 			),
 		},
+		"SD": {
+			Name:       "Sudan",
+			Alpha2Code: "SD",
+			Alpha3Code: "SDN",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(2, bban.Num),
+				bban.NewAccountNumber(12, bban.Num),
+			),
+		},
 		"SK": {
 			Name:       "Slovakia",
 			Alpha2Code: "SK",
@@ -643,6 +746,16 @@ var (
 				bban.NewBranchCode(3, bban.Num),
 				bban.NewAccountNumber(8, bban.Num),
 				bban.NewNationalCheckDigit(2, bban.Num),
+			),
+		},
+		"SO": {
+			Name:       "Somalia",
+			Alpha2Code: "SO",
+			Alpha3Code: "SOM",
+			Structure: bban.NewStructure(
+				bban.NewBankCode(4, bban.Num),
+				bban.NewBranchCode(3, bban.Num),
+				bban.NewAccountNumber(12, bban.Num),
 			),
 		},
 		"ES": {
@@ -739,6 +852,16 @@ var (
 			Structure: bban.NewStructure(
 				bban.NewBankCode(6, bban.Num),
 				bban.NewAccountNumber(19, bban.AlphaNum),
+			),
+		},
+		"YE": {
+			Name:       "Yemen",
+			Alpha2Code: "YE",
+			Alpha3Code: "YEM",
+			Structure: bban.NewStructure(
+				bban.NewBranchCode(4, bban.AlphaUpper),
+				bban.NewBranchCode(4, bban.Num),
+				bban.NewAccountNumber(18, bban.AlphaNum),
 			),
 		},
 	}
