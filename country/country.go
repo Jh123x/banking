@@ -25,13 +25,8 @@ func Exists(code string) bool {
 
 // Get returns country by given country code.
 func Get(code string) (Country, bool) {
-	country, ok := countriesWithStructure[code]
-	if ok {
-		return country, ok
-	}
-
-	country2, ok := countries[code]
-	return country2, ok
+	country, ok := countries[code]
+	return country, ok
 }
 
 // GetBbanStructure returns bban.Structure by given country code.
